@@ -56,7 +56,9 @@ function showmsg() {
       $.subt = '获得' + data.sign_up_credit + '积分';
     } else if (code === 5020007) $.subt += '重复';
     else $.subt += '失败';
-    $.msg($.name, $.subt, $.desc);
+    $.msg($.name, $.subt, $.desc, {
+      'open-url': 'wxd374db136c4fc68e://',
+    });
     resolve();
   });
 }
