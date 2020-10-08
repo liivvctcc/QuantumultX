@@ -43,7 +43,7 @@ function showmsg() {
   return new Promise((resolve) => {
     const {
       data,
-      state: { code },
+      state: { code, msg },
     } = $.resData;
     $.subt = '签到: ';
 
@@ -55,7 +55,7 @@ function showmsg() {
     if (code === 2000000) {
       $.subt = '获得' + data.sign_up_credit + '积分';
     } else if (code === 5020007) $.subt += '重复';
-    else $.subt += '失败';
+    else $.subt += '失败，' + msg;
     $.msg($.name, $.subt, $.desc, {
       'open-url': 'wxd374db136c4fc68e://',
     });
