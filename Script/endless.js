@@ -10,7 +10,7 @@
 
 [rewrite]
 # google 翻页 (senku)
-https?:\/\/www\.google\.com\/search.* url script-response-body https://raw.githubusercontent.com/id77/QuantumultX/master/Script/endless.js
+https?:\/\/www\.google\.com\/search.*(?<!start=\d{2}|\d{3})$ url script-response-body https://raw.githubusercontent.com/id77/QuantumultX/master/Script/endless.js
 
 [mitm]
 hostname = www.google.com
