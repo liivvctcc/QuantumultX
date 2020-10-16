@@ -21,6 +21,8 @@ hostname = www.zhihu.com, zhuanlan.zhihu.com
 let html = $response.body;
 let nonce = html.match(/nonce="[\w\-]*"/g)[1];
 
+html = html.replace('apple-itunes-app', '');
+
 html =
   html.replace(/(<\/html>)/g, '') +
   `
@@ -29,11 +31,12 @@ html =
     -webkit-transform:translate(-50%,50px) !important;
     transform: translate(-50%,50px) !important;
 }
+.CommentsForOia button {
+  display: none;
+}
 </style>
 
 <script ${nonce}>
-document.querySelector("[name='apple-itunes-app']").remove()
-
 setTimeout(
 () => {
     document.querySelector(".MobileModal-wrapper").remove()
@@ -47,7 +50,7 @@ setTimeout(
     document.querySelector("body").style.overflow = "auto"
     document.querySelector(".Question-main").removeAttribute("class")
 
-    document.querySelectorAll(".ContentItem-expandButton").forEach(item => item.click())
+    // document.querySelectorAll(".ContentItem-expandButton").forEach(item => item.click())
 }
 ,
 600
