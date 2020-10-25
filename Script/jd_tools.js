@@ -663,7 +663,7 @@ functionId = stall_getTaskDetail & body = $ {
 }
 `);
                 utils_1.default.copyText(`
-https: //bunearth.m.jd.com/babelDiy/Zeus/4SJUHwGdUQYgg94PFzjZZbGZRjDd/index.html?shareType=homeTask&inviteId=${inviteId}`);
+https: //wbbny.m.jd.com/babelDiy/Zeus/4SJUHwGdUQYgg94PFzjZZbGZRjDd/index.html?shareType=homeTask&inviteId=${inviteId}`);
 }
 else {
 utils_1.default.outPutLog(this.outputTextarea, `鏁版嵁寮傚父`);
@@ -673,12 +673,12 @@ utils_1.default.outPutLog(this.outputTextarea, `鏁版嵁寮傚父`);
 help() {
 utils_1.default.outPutLog(this.outputTextarea, `鎿嶄綔鎴愬姛锛佽阿璋綘鍔╁姏锛乣);
         let InviteIdArr = ['T0kkDJUmGX0Sdet46x7KGSqKNI-klg18GVA8f5s', 'DgxlSNRnRyNRPa01oWqgYGmh6fowp7KSdvYh_P9xeptD0UnvN0zMq6o'];
-        this.assist("https://bunearth.m.jd.com/babelDiy/Zeus/4SJUHwGdUQYgg94PFzjZZbGZRjDd/index.html?shareType=homeTask&inviteId=" + InviteIdArr[utils_1.default.random(0, InviteIdArr.length - 1)]);
+        this.assist("https://wbbny.m.jd.com/babelDiy/Zeus/4SJUHwGdUQYgg94PFzjZZbGZRjDd/index.html?shareType=homeTask&inviteId=" + InviteIdArr[utils_1.default.random(0, InviteIdArr.length - 1)]);
     }
     helpGroup() {
         utils_1.default.outPutLog(this.outputTextarea, `
 鎿嶄綔鎴愬姛锛佽阿璋 綘涓烘垜鐨勫晢鍦堝姪鍔涳紒 `);
-        this.assistGroup('https://bunearth.m.jd.com/babelDiy/Zeus/4SJUHwGdUQYgg94PFzjZZbGZRjDd/index.html?shareType=cbdDay&inviteId=XUkkFpUhDG1WJqszpW2uY-4mR3ZvVGMfViX3iMWdE4FeIvO3rYjOC-K6cox9EhA');
+        this.assistGroup('https://wbbny.m.jd.com/babelDiy/Zeus/4SJUHwGdUQYgg94PFzjZZbGZRjDd/index.html?shareType=cbdDay&inviteId=XUkkFpUhDG1WJqszpW2uY-4mR3ZvVGMfViX3iMWdE4FeIvO3rYjOC-K6cox9EhA');
     }
     group() {
         fetch('https://api.m.jd.com/client.action', {
@@ -700,7 +700,7 @@ groupAssistInviteId
 }
 `);
                 utils_1.default.copyText(`
-https: //bunearth.m.jd.com/babelDiy/Zeus/4SJUHwGdUQYgg94PFzjZZbGZRjDd/index.html?shareType=cbdDay&inviteId=${groupAssistInviteId}`);
+https: //wbbny.m.jd.com/babelDiy/Zeus/4SJUHwGdUQYgg94PFzjZZbGZRjDd/index.html?shareType=cbdDay&inviteId=${groupAssistInviteId}`);
 }
 else {
 utils_1.default.outPutLog(this.outputTextarea, `璇峰厛鍒涘缓鍟嗗湀锛乣);
@@ -3738,7 +3738,7 @@ function buildTitle() {
                                                         const activityArea = document.createElement("div");
                                                         activityArea.setAttribute("style", "border: 1px solid #000");
                                                         activityArea.innerHTML = `<h3 style='border-bottom: 1px solid #2196F3;display: inline-block;margin: 5px;'>娲诲姩鎺ㄨ崘</h3>
-    <p style="color:red;font-weight:bold;"><a style="color:red" href="https://bunearth.m.jd.com/babelDiy/Zeus/4SJUHwGdUQYgg94PFzjZZbGZRjDd/index.html?babelChannel=1#/home" target="_blank">鍏ㄦ皯钀ヤ笟</a></p>`;
+    <p style="color:red;font-weight:bold;"><a style="color:red" href="https://wbbny.m.jd.com/babelDiy/Zeus/4SJUHwGdUQYgg94PFzjZZbGZRjDd/index.html?babelChannel=1#/home" target="_blank">鍏ㄦ皯钀ヤ笟</a></p>`;
                                                         container.append(activityArea);
                                                     }
                                                     function buildRecommend() {
@@ -3925,17 +3925,6 @@ function buildTitle() {
                                                             type = couponType_1.couponType.exchange;
                                                         }
                                                         //浜笢APP鑺傚亣鏃ヨ惀閿€娲诲姩
-                                                        if (config_1.default.locationHref.includes("bunearth.m.jd.com")) {
-                                                            if (config_1.default.locationHref.includes("4PWgqmrFHunn8C38mJA712fufguU")) {
-                                                                type = activityType_1.activityType.monsterNian;
-                                                            } else if (config_1.default.locationHref.includes("w6y8PYbzhgHJc8Lu1weihPReR2T")) {
-                                                                type = activityType_1.activityType.brandCitySpring;
-                                                            } else if (config_1.default.locationHref.includes("21tFbS6Xm4tpon3oJnwzbnCJBo1Z")) {
-                                                                type = activityType_1.activityType.receiveBless;
-                                                            } else if (config_1.default.locationHref.includes("4SJUHwGdUQYgg94PFzjZZbGZRjDd")) {
-                                                                type = activityType_1.activityType.stall;
-                                                            }
-                                                        }
                                                         if (config_1.default.locationHref.includes("wbbny.m.jd.com")) {
                                                             if (config_1.default.locationHref.includes("4PWgqmrFHunn8C38mJA712fufguU")) {
                                                                 type = activityType_1.activityType.monsterNian;
@@ -3947,6 +3936,7 @@ function buildTitle() {
                                                                 type = activityType_1.activityType.stall;
                                                             }
                                                         }
+                                                      
                                                         if (config_1.default.locationHref.includes("palace")) {
                                                             type = activityType_1.activityType.palace;
                                                         }
